@@ -9,15 +9,16 @@ import { StartComponent } from './start/start.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { InfoComponent } from './info/info.component';
+import { Page1Component } from './page1/page1.component';
 
 
 const appRoutes: Routes = [
-  { path: '', redirectTo : '/home', pathMatch:'full'},{path:'home', component: HomeComponent, pathMatch:'full' },{path:'start',component:StartComponent},{path:'info',component:InfoComponent}
+  { path: '', redirectTo : '/home', pathMatch:'full'},{path:'home', component: HomeComponent, pathMatch:'full' },{path:'start',component:StartComponent},{path:'info',component:InfoComponent},{path:'page1',component:Page1Component}
 ];
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule , RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, HelloComponent, StartComponent, HomeComponent, HeaderComponent, InfoComponent,],
+  declarations: [ AppComponent, HelloComponent, StartComponent, HomeComponent, HeaderComponent, InfoComponent, Page1Component,],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
