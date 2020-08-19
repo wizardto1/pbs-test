@@ -1,0 +1,57 @@
+<div class="header">#11: Step Over 
+Obstacles (20 ft / 6 m)         
+   
+
+</div>
+<div class="info">
+<p>
+Tester: 
+Measure and mark a 20 ft (6 m) walkway between 2 tapes. Place 2 stacked shoe boxes 10 ft away from the start. Guard client. Look for hesitation, short steps and touching the boxes during task. Demonstrate the task. Allow 1 practice trial. Indicate assistive device, if used. 
+
+
+</p><p>
+Client: 
+Stand, begin walking at your usual speed. When you get to the boxes, step over them, not around them, and keep walking. Try not to touch the boxes. 
+
+
+<p>
+</div>
+<div class="options"><app-timer></app-timer> <div class="radio-toolbar">
+  <table>
+    
+    <tr>
+      <td>Steps over boxes 
+with minimal change
+of gait speed.  
+
+</td>
+      <td>
+  <input type="radio" id="1" name="q2" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  
+  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
+  <td>Touches boxes, 
+hesitates, slows 
+gait, OR 
+Unable
+</td><td>
+  <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
+  <div >Time Recorded:<div class="time">{{time}}s</div> <br>
+  Assertive Device used:
+  <input type="radio" id="yes" name="q2" value="yes" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="yes" style="font-weight:bold; margin-right:2vh;">Yes </label>
+  <input type="radio" id="no" name="q2" value="no" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="no" style="font-weight:bold">No</label><br>
+  Specify:
+  <input type="radio" id="cane" name="q2" value="cane" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="cane" style="font-weight:bold; margin-right:2vh;">Cane</label>
+  <input type="radio" id="walker" name="q2" value="walker" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="walker" style="font-weight:bold">Walker</label>
+  <input type="radio" id="crutch" name="q2" value="crutch" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="crutch" style="font-weight:bold; margin-right:2vh;">Crutch</label>
+  <input type="radio" id="other" name="q2" value="other" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="other" style="font-weight:bold">Other</label><br>
+  </div>
+  </div>
+  
+<div class="bottom">
+        <button [routerLink]="['/page10']"  > Back</button>
+      <button [routerLink]="['/page12']"  > Next</button>
+
+ </div>
