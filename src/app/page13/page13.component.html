@@ -1,0 +1,36 @@
+<div class="header">#13: In Place 
+Response - Backward
+
+   
+</div>
+<div class="info">
+<p>
+Tester: Stand behind client. Place 1 hand on each scapula. Lightly push client forward until client’s heels are about to lift off the floor. Do not allow trunk motion or pre-leaning. Suddenly release your hands.
+
+</p><p>
+Client: Stand with your feet shoulder width apart, arms at your sides. Do not allow me to push you forward. When I let go keep your balance without taking a step.
+
+<p>
+</div>
+<div class="options"><app-timer></app-timer> <div class="radio-toolbar">
+  <table>
+    <tr>
+      <td>Recovers stability
+with ankles 
+AND no added 
+arm  / hip motion 
+AND no stepping
+</td>
+      <td>
+  <input type="radio" id="1" name="q1" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  
+  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
+  <td>less than 2 mins/Unable</td><td>
+  <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
+ 
+  </div>
+<div class="bottom">
+        <button [routerLink]="['/page12']"  > Back</button>
+      <button [routerLink]="['/page14']"  > Next</button>
+
+ </div>

@@ -20,14 +20,15 @@ Sit down on the mat on the floor and then stand back up. I will time you.
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
   <table>
     <tr>
-    <th>Stands:</th></tr>
+    <th>Sits on floor and stands back up:
+</th></tr>
     <tr>
-      <td>over 3s</td>
+      <td>over 2 mins</td>
       <td>
   <input type="radio" id="1" name="q1" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
   <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
-  <td>less than 3s/Unable</td><td>
+  <td>less than 2 mins/Unable</td><td>
   <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
   <div >Time Recorded:<div class="time">{{time}}s</div> </div>
   </div>
