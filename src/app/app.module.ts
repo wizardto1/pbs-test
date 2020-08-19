@@ -8,15 +8,16 @@ import { HelloComponent } from './hello.component';
 import { StartComponent } from './start/start.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { InfoComponent } from './info/info.component';
 
 
 const appRoutes: Routes = [
-  { path: '', redirectTo : '/home', pathMatch:'full'},{path:'home', component: HomeComponent, pathMatch:'full' },{path:'start',component:StartComponent}
+  { path: '', redirectTo : '/home', pathMatch:'full'},{path:'home', component: HomeComponent, pathMatch:'full' },{path:'start',component:StartComponent},{path:'info',component:InfoComponent}
 ];
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule , RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, HelloComponent, StartComponent, HomeComponent, HeaderComponent,],
+  declarations: [ AppComponent, HelloComponent, StartComponent, HomeComponent, HeaderComponent, InfoComponent,],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
