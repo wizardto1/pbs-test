@@ -1,0 +1,32 @@
+<div class="header">#6: Stand Alternately Touch Foot on Stool/Step 
+</div>
+<div class="info">
+<p>
+Tester: Position client facing a step/stool (8 in [20 cm] high). Count the number of successful touches AND total time to complete the touches in 20 s. No assistive device, no assistance, demonstrate the task. 
+
+</p><p>
+Client: Stand in front of the stool/step. Place each foot alternately on the step/stool. Continue until each foot touches the stool/step 4 times (8 steps). I will time you. 
+
+<p>
+</div>
+<div class="options"><app-timer></app-timer> <div class="radio-toolbar">
+  <table>
+    <tr>
+    <th>Stands:</th></tr>
+    <tr>
+      <td>Recovers stability with ankles AND no added arm / hip motion AND no stepping 
+</td>
+      <td>
+  <input type="radio" id="1" name="q2" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  
+  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
+  <td>Unable</td><td>
+  <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
+  <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+  </div>
+  
+<div class="bottom">
+        <button [routerLink]="['/page4']"  > Back</button>
+      <button [routerLink]="['/page6']"  > Next</button>
+
+ </div>
