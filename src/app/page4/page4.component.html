@@ -1,0 +1,34 @@
+<div class="header">#4:Stand 
+Unsupported Feet Together, Eyes Closed 
+</div>
+<div class="info">
+<p>
+Tester: 
+No assistive device, no assistance, demonstrate task. Allow 2 trials, if needed. Score best trial.
+
+</p><p>
+Client: 
+Stand with your feet touching together and hands on your hips. I will ask you to close your eyes and stand as still as you can until I say stop. I will start timing when you close your eyes. 
+
+<p>
+</div>
+<div class="options"><app-timer></app-timer> <div class="radio-toolbar">
+  <table>
+    <tr>
+    <th>Stands:</th></tr>
+    <tr>
+      <td>over 30s</td>
+      <td>
+  <input type="radio" id="1" name="q2" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  
+  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
+  <td>Under 30s/Unable</td><td>
+  <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
+  <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+  </div>
+  
+<div class="bottom">
+        <button [routerLink]="['/page3']"  > Back</button>
+      <button [routerLink]="['/page5']"  > Next</button>
+
+ </div>

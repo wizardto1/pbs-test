@@ -23,9 +23,16 @@ Stand with feet hip width apart. Step on the tape with your toes against the fro
   <td>Unable</td><td>
   <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
   <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+  <div class="radio-toolbar">
+    Step Leg: <input type="radio" id="1" name="q2" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  
+  <label for="1" style="font-weight:bold; margin-right:2vh;">Left </label>
+  <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Right</label>
+  </div>
+  
   </div>
 <div class="bottom">
         <button [routerLink]="['/page1']"  > Back</button>
-      <button [routerLink]="['/page2']"  > Next</button>
+      <button [routerLink]="['/page3']"  > Next</button>
 
  </div>
