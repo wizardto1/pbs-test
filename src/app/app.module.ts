@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { InfoComponent } from './info/info.component';
 import { Page1Component } from './page1/page1.component';
+import { TimerComponent } from './timer/timer.component';
 
 
 const appRoutes: Routes = [
@@ -18,7 +19,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule , RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, HelloComponent, StartComponent, HomeComponent, HeaderComponent, InfoComponent, Page1Component,],
+  declarations: [ AppComponent, HelloComponent, StartComponent, HomeComponent, HeaderComponent, InfoComponent, Page1Component, TimerComponent,],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

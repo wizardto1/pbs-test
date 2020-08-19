@@ -8,9 +8,22 @@ Client:
 Place 1 foot directly in front of the other foot, touching heel to toe. Look straight ahead, hands on your hips. Stand as still as you can, until I say stop (client chooses foot in front).
 <p>
 </div>
-<div class="options"></div>
+<div class="options"><app-timer></app-timer> <div class="radio-toolbar">
+  <table>
+    <tr>
+      <td>over 10s</td>
+      <td>
+  <input type="radio" id="1" name="q1" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  
+  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
+  <td>less than 10s</td><td>
+  <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
+  <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+  </div>
 <div class="bottom">
-        <button [routerLink]="['/start']"  > Back</button>
+        <button [routerLink]="['/info']"  > Back</button>
       <button [routerLink]="['/page1']"  > Next</button>
 
  </div>
+
+ 

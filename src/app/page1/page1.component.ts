@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page1.component.css']
 })
 export class Page1Component implements OnInit {
-
+  flag;
+  time;
+  buttonDisabled:boolean=false;
   constructor() { }
 
   ngOnInit() {
   }
-
+radioEventHandler(event:any){
+    
+    this.buttonDisabled=true;
+  }
 }
