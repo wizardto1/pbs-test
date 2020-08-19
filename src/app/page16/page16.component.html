@@ -1,0 +1,29 @@
+<div class="header">#16: Stand Feet Shoulder Width Apart on Foam, Eyes Closed
+
+   
+</div>
+<div class="info">
+<p>
+Tester: Place Tempur® foam on floor. Assist client stepping onto and then off the foam after testing. Allow 2 trials, if needed. Have client step off the foam between trials. Score best trial.
+</p><p>
+Client: Step on the foam, place your feet shoulder width apart, hands on your hips. I will ask you to close your eyes and stand as still as you can until I say stop. I will start timing when you close your eyes.
+<p>
+</div>
+<div class="options"><app-timer></app-timer> <div class="radio-toolbar">
+  <table>
+    <tr>
+      <td>More than 30s
+</td>
+      <td>
+  <input type="radio" id="1" name="q1" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  
+  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
+  <td>Less than 30s/Unable</td><td>
+  <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
+ <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+  </div>
+<div class="bottom">
+        <button [routerLink]="['/page15']"  > Back</button>
+      <button [routerLink]="['/page17']"  > Next</button>
+
+ </div>

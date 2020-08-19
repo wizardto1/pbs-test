@@ -23,17 +23,21 @@ import { Page10Component } from './page10/page10.component';
 import { Page11Component } from './page11/page11.component';
 import { Page12Component } from './page12/page12.component';
 import { Page13Component } from './page13/page13.component';
+import { Page14Component } from './page14/page14.component';
+import { Page15Component } from './page15/page15.component';
+import { Page16Component } from './page16/page16.component';
+import { Page17Component } from './page17/page17.component';
 
 
 
 
 const appRoutes: Routes = [
-  { path: '', redirectTo : '/home', pathMatch:'full'},{path:'home', component: HomeComponent, pathMatch:'full' },{path:'start',component:StartComponent},{path:'info',component:InfoComponent},{path:'page1',component:Page1Component},{path:'page2',component:Page2Component},{path:'page3',component:Page3Component},{path:'page4',component:Page4Component},{path:'page5',component:Page5Component},{path:'page6',component:Page6Component},{path:'page7',component:Page7Component},{path:'page8',component:Page8Component},{path:'page9',component:Page9Component},{path:'page10',component:Page10Component},{path:'page11',component:Page11Component},{path:'page12',component:Page12Component},{path:'page13',component:Page13Component}
+  { path: '', redirectTo : '/home', pathMatch:'full'},{path:'home', component: HomeComponent, pathMatch:'full' },{path:'start',component:StartComponent},{path:'info',component:InfoComponent},{path:'page1',component:Page1Component},{path:'page2',component:Page2Component},{path:'page3',component:Page3Component},{path:'page4',component:Page4Component},{path:'page5',component:Page5Component},{path:'page6',component:Page6Component},{path:'page7',component:Page7Component},{path:'page8',component:Page8Component},{path:'page9',component:Page9Component},{path:'page10',component:Page10Component},{path:'page11',component:Page11Component},{path:'page12',component:Page12Component},{path:'page13',component:Page13Component},{path:'page14',component:Page14Component},{path:'page15',component:Page15Component},{path:'page16',component:Page16Component},{path:'page17',component:Page17Component}
 ];
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule , RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, HelloComponent, StartComponent, HomeComponent, HeaderComponent, InfoComponent, Page1Component, TimerComponent, Page2Component, Page3Component, Page4Component, Page5Component, Page6Component, Page7Component, Page8Component, Page9Component, Page10Component, Page11Component, Page12Component, Page13Component,],
+  declarations: [ AppComponent, HelloComponent, StartComponent, HomeComponent, HeaderComponent, InfoComponent, Page1Component, TimerComponent, Page2Component, Page3Component, Page4Component, Page5Component, Page6Component, Page7Component, Page8Component, Page9Component, Page10Component, Page11Component, Page12Component, Page13Component, Page14Component, Page15Component, Page16Component, Page17Component,],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

@@ -1,0 +1,30 @@
+<div class="header">#15:Four Square 
+Step Test
+
+   
+</div>
+<div class="info">
+<p>
+Tester: Using 4 canes (35 in [90 cm] long), set test up on the floor as shown in the figure below. Handle direction and type of canes do not matter. Have client start in box 1, facing box 2. No assistive device, no assistance, demonstrate task. Allow 1 practice trial. Demonstrate task. Time from start to finish. 
+</p><p>
+Client: Step forward into square 2, then sideways to square 3, then backward to square 4, then sideways to square 1, sideways to square 4, forward to square 3, sideways to square 2, and then backward to square 1. I will time you.
+<p>
+</div>
+<div class="options"><app-timer></app-timer> <div class="radio-toolbar">
+  <table>
+    <tr>
+      <td>Less than 15s
+</td>
+      <td>
+  <input type="radio" id="1" name="q1" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  
+  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
+  <td>Unable</td><td>
+  <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
+ <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+  </div>
+<div class="bottom">
+        <button [routerLink]="['/page14']"  > Back</button>
+      <button [routerLink]="['/page16']"  > Next</button>
+
+ </div>
