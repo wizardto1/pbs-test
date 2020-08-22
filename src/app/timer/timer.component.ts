@@ -20,6 +20,7 @@ interval;
 
 
 start() {
+  if (this.play==false){
   this.play = true;
   this.interval = setInterval(() => {
     this.time++;
@@ -41,6 +42,7 @@ start() {
         }*/
         
   },1000)
+  }
 }
 
 stop() {
