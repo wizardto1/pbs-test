@@ -11,7 +11,7 @@ Place 1 foot directly in front of the other foot, touching heel to toe. Look str
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
   <table>
     <tr>
-    <th>Stands:</th></tr>
+    <th>Stands:</th> <th><div >Time Recorded:<div class="time">{{time}}s</div> </div></th></tr>
     <tr>
       <td>over 10s</td>
       <td>
@@ -19,13 +19,14 @@ Place 1 foot directly in front of the other foot, touching heel to toe. Look str
   
   <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
   <td>less than 10s</td><td>
-  <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
-  <div >Time Recorded:<div class="time">{{time}}s</div> </div>
-  <div class="radio-toolbar">
-    Foot: <input type="radio" id="left" name="q1foot" value="left" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr>
+  <tr>
+  
+      <td>
+    Foot: </td><td><input type="radio" id="left" name="q1foot" value="left" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
   <label for="left" style="font-weight:bold; margin-right:2vh;">Left </label>
-  <input type="radio" id="right" name="q1foot" value="right" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="right" style="font-weight:bold">Right</label>
+  <input type="radio" id="right" name="q1foot" value="right" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="right" style="font-weight:bold">Right</label></td></tr></table>
   </div>
   </div>
 <div class="bottom">
