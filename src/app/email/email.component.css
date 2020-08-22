@@ -1,8 +1,5 @@
-p{
-  font-family:Lato;
-}
 .header{
-  text-align:center;
+  text-align:left;
   font-family:Lato;
   font-size:5vh;
   border:solid;
@@ -11,7 +8,7 @@ p{
   border-color:blue;
 }
 .body{
-   text-align:center;
+   text-align:left;
   font-family:Lato;
   font-size:3vh;
   border:solid;
@@ -19,7 +16,7 @@ p{
   margin-bottom:3vh;
   height:70vh;
   border-color:blue;
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 button{
   background-color: #4CAF50; /* Green */
@@ -30,16 +27,4 @@ button{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin:1vh;
-}
-.bottom{
-  
-  font-family:Lato;
-  font-size:5vh;
-  border:solid;
-  padding:1vh;
-  margin-bottom:2vh;
-  border-color:blue;
-  
-  display:flex;
 }

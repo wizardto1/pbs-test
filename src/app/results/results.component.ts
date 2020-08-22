@@ -11,6 +11,7 @@ export class ResultsComponent implements OnInit {
   apa=0;
   pr=0;
   sg=0;
+  to=0;
   total=0;
   constructor() { }
 
