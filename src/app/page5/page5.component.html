@@ -10,19 +10,19 @@ Response-Forward</h1>
 <p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
-  <table>
-    <tr>
-    <th>Stands:</th></tr>
-    <tr>
-      <td>Recovers stability with ankles AND no added arm / hip motion AND no stepping 
-</td>
-      <td>
+ 
+  
+
+  <br>
   <input type="radio" id="1" name="q5" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
-  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
-  <td>Unable</td><td>
-  <input type="radio" id="0" name="q5" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
+  <label for="1" style="font-weight:bold; margin:2vh;">Recovers stability with ankles AND no added arm / hip motion AND no
+stepping                                     </label>
   
+  <input type="radio" id="0" name="q5" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Unable</label></div>
+  <label for="notes">Notes: </label>
+    <input type="text" id="notes" name="notes">
+
   </div>
   
 <div class="bottom">
