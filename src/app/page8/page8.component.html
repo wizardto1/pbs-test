@@ -16,7 +16,7 @@ Sit with your back against the chair back. When I say “go,” stand up from th
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
   <table>
     <tr>
-    <th>Completes in:</th></tr>
+    <th>Completes in:</th><td><div >Time Recorded:<div class="time">{{time}}s</div> </div></td></tr>
     <tr>
       <td>under 12s
 </td>
@@ -26,7 +26,7 @@ Sit with your back against the chair back. When I say “go,” stand up from th
   <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
   <td>Over 12s/Unable</td><td>
   <input type="radio" id="0" name="q8" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
-  <div >Time Recorded:<div class="time">{{time}}s</div> <br>
+ 
   <div class="radio-toolbar">
   If an assistive device is used,specify:
   <input type="radio" id="cane" name="q8d" value="cane" [(ngModel)]="flag" (change)=radioEventHandler($event)>
@@ -35,7 +35,7 @@ Sit with your back against the chair back. When I say “go,” stand up from th
   <input type="radio" id="crutch" name="q8d" value="crutch" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="crutch" style="font-weight:bold; margin-right:2vh;">Crutch</label>
   <input type="radio" id="other" name="q8d" value="other" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="other" style="font-weight:bold">Other</label><br>
-  </div>
+  
   </div>
   </div>
   

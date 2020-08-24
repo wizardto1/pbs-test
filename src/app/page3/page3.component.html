@@ -14,7 +14,7 @@ No assistive device, no assistance, demonstrate task. Allow 2 trials, if needed.
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
   <table>
     <tr>
-    <th>Stands:</th></tr>
+    <th>Stands:</th><td><div >Time Recorded:<div class="time">{{time}}s</div> </div></td></tr>
     <tr>
       <td>over 30s</td>
       <td>
@@ -23,7 +23,7 @@ No assistive device, no assistance, demonstrate task. Allow 2 trials, if needed.
   <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
   <td>Under 30s/Unable</td><td>
   <input type="radio" id="0" name="q3" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
-  <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+
   </div>
   
 <div class="bottom">

@@ -35,19 +35,15 @@ gait, OR
 Unable
 </td><td>
   <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
-  <div >Time Recorded:<div class="time">{{time}}s</div> <br>
-  Assertive Device used:
-  <input type="radio" id="yes" name="q2" value="yes" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="yes" style="font-weight:bold; margin-right:2vh;">Yes </label>
-  <input type="radio" id="no" name="q2" value="no" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="no" style="font-weight:bold">No</label><br>
-  Specify:
+ <div class="radio-toolbar">
+  If assistive was used, Specify:
   <input type="radio" id="cane" name="q2" value="cane" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="cane" style="font-weight:bold; margin-right:2vh;">Cane</label>
-  <input type="radio" id="walker" name="q2" value="walker" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="walker" style="font-weight:bold">Walker</label>
+  <input type="radio" id="walker" name="q2" value="walker" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="walker" style="font-weight:bold;margin-right:2vh;">Walker</label>
   <input type="radio" id="crutch" name="q2" value="crutch" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="crutch" style="font-weight:bold; margin-right:2vh;">Crutch</label>
   <input type="radio" id="other" name="q2" value="other" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="other" style="font-weight:bold">Other</label><br>
-  </div>
+ </div>
   </div>
   
 <div class="bottom">

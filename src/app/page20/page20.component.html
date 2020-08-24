@@ -31,14 +31,11 @@
 Unable
 </td><td>
   <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
-  <div >Time Recorded:<div class="time">{{time}}s</div> <br>
-  Assertive Device used:
-  <input type="radio" id="yes" name="q2" value="yes" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="yes" style="font-weight:bold; margin-right:2vh;">Yes </label>
-  <input type="radio" id="no" name="q2" value="no" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="no" style="font-weight:bold">No</label><br>
-  <label for="steps">Specify: </label>
+ 
+  
+  <label for="steps">If assistive device was used,Specify: </label>
     <input type="text" id="steps" name="steps">
-  </div>
+  
   </div>
   
 <div class="bottom">

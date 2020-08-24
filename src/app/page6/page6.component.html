@@ -12,7 +12,7 @@
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
   <table>
     <tr>
-    <th>Completes 8 Steps in:</th></tr>
+    <th>Completes 8 Steps in:</th><td><div >Time Recorded:<div class="time">{{time}}s</div> </div></td></tr>
     <tr>
       <td>20s or higher 
 </td>
@@ -22,7 +22,7 @@
   <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
   <td>Less than 20s/Unable</td><td>
   <input type="radio" id="0" name="q6" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
-  <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+  
   <label for="steps"># of Steps: </label>
     <input type="text" id="steps" name="steps">
   </div>

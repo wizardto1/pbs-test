@@ -14,7 +14,7 @@ Sit in the middle of the chair, arms across your chest. Stand up and sit down 5 
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
   <table>
     <tr>
-    <th>Completes 5 Reps in:</th></tr>
+    <th>Completes 5 Reps in:</th><td><div >Time Recorded:<div class="time">{{time}}s</div> </div></td></tr>
     <tr>
       <td>under 12s
 </td>
@@ -24,7 +24,7 @@ Sit in the middle of the chair, arms across your chest. Stand up and sit down 5 
   <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
   <td>Over 20s/Unable</td><td>
   <input type="radio" id="0" name="q7" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
-  <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+ 
   <label for="steps"># of Reps: </label>
     <input type="text" id="steps" name="steps">
   </div>
