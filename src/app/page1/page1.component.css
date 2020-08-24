@@ -4,11 +4,14 @@ p{
 .header{
   text-align:center;
   font-family:Lato;
-  font-size:5vh;
+
   border:solid;
-  padding:1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   margin-bottom:2vh;
   border-color:blue;
+  height:8vh;
 }
 .info{
    text-align:left;
@@ -17,7 +20,7 @@ p{
   border:solid;
   padding:1vh;
   margin-bottom:3vh;
-  height:30vh;
+  height:47vh;
   border-color:blue;
   overflow-x: hidden;
 }
@@ -27,8 +30,8 @@ p{
   font-size:3vh;
   border:solid;
   padding:1vh;
-  margin-bottom:6vh;
-  height:31.3vh;
+  margin-bottom:3vh;
+  height:27;
   border-color:blue;
   overflow-x: hidden;
 }
@@ -107,7 +110,7 @@ margin-left: auto;
   display: inline-block;
   padding:1vw;
   margin: 1vh 1vw 1vh 1vw;
-  height: 5vh;
+  height: 25vh;
   width: 20vw;
   font-family:Lato;
 }
