@@ -6,10 +6,10 @@ p{
   font-family:Lato;
 
   border:solid;
-  padding:1vh;
+  
   margin-bottom:2vh;
   border-color:blue;
-  height:10vh;
+  height:8vh;
 }
 .body{
    text-align:center;
@@ -18,7 +18,7 @@ p{
   border:solid;
   padding:1vh;
   margin-bottom:3vh;
-  height:70vh;
+  height:77vh;
   border-color:blue;
 }
 button{
