@@ -4,11 +4,14 @@ p{
 .header{
   text-align:center;
   font-family:Lato;
-  font-size:5vh;
+
   border:solid;
-  padding:1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   margin-bottom:2vh;
   border-color:blue;
+  height:10vh;
 }
 .info{
    text-align:left;
@@ -17,7 +20,7 @@ p{
   border:solid;
   padding:1vh;
   margin-bottom:3vh;
-  height:30vh;
+  height:47vh;
   border-color:blue;
   overflow-x: hidden;
 }
@@ -27,8 +30,8 @@ p{
   font-size:3vh;
   border:solid;
   padding:1vh;
-  margin-bottom:6vh;
-  height:31.3vh;
+  margin-bottom:3vh;
+  height:27vh;
   border-color:blue;
   overflow-x: hidden;
 }
@@ -78,6 +81,7 @@ button{
 }
 table, th, td {
   margin-right: auto;
+  
 
 margin-left: auto;
 }

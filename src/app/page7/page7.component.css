@@ -11,7 +11,7 @@ p{
   align-items: center; 
   margin-bottom:2vh;
   border-color:blue;
-  height:8vh;
+  height:10vh;
 }
 .info{
    text-align:left;
@@ -31,7 +31,7 @@ p{
   border:solid;
   padding:1vh;
   margin-bottom:3vh;
-  height:27;
+  height:27vh;
   border-color:blue;
   overflow-x: hidden;
 }

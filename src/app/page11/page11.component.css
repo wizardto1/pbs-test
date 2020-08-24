@@ -4,14 +4,14 @@ p{
 .header{
   text-align:center;
   font-family:Lato;
-
+  
   border:solid;
   display: flex;
   justify-content: center;
   align-items: center; 
   margin-bottom:2vh;
   border-color:blue;
-  height:8vh;
+  height:10vh;
 }
 .info{
    text-align:left;
