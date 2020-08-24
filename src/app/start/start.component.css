@@ -14,9 +14,9 @@ p{
   border-color:blue;
 }
 .body{
-   text-align:center;
+   text-align:left;
   font-family:Lato;
-  font-size:3vh;
+  font-size:2vh;
   border:solid;
   padding:1vh;
   margin-bottom:3vh;

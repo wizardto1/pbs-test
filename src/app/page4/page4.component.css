@@ -4,7 +4,7 @@ p{
 .header{
   text-align:center;
   font-family:Lato;
-
+  font-size:2vh;
   border:solid;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@ p{
   border:solid;
   padding:1vh;
   margin-bottom:3vh;
-  height:27;
+  height:27vh;
   border-color:blue;
   overflow-x: hidden;
 }

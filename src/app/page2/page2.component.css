@@ -31,7 +31,7 @@ p{
   border:solid;
   padding:1vh;
   margin-bottom:3vh;
-  height:27;
+  height:27vh;
   border-color:blue;
   overflow-x: hidden;
 }
@@ -81,6 +81,7 @@ button{
 }
 table, th, td {
   margin-right: auto;
+  
   
 
 margin-left: auto;
