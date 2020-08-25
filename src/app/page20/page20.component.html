@@ -16,26 +16,32 @@
 <p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
-  <table>
-    <tr>
-      <th>Walks in:</th></tr>
-    <tr>
-      <td>≤ 7 s with no imbalance AND ≤ 6 in (15 cm) max deviation from center of walkway    
+    <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+      
 
-</td>
-      <td>
-  <input type="radio" id="1" name="q2" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  Walks in:<br>
+  <input type="radio" id="1" name="q20" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
-  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
-  <td>
-Unable
-</td><td>
-  <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
- 
+  <label for="1" style="font-weight:bold; margin:1vh;">≤ 7 s with no imbalance AND ≤ 6 in (15 cm) max deviation from center of walkway                                                      </label>
   
-  <label for="steps">If assistive device was used,Specify: </label>
-    <input type="text" id="steps" name="steps">
+  <input type="radio" id="0" name="q20" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold"> 
+Unable                              
+</label><br>
+ </div>
+
+
   
+  <div class="radio-toolbar">
+  If an assistive device is used,specify:
+  <input type="radio" id="cane" name="q20d" value="cane" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  <label for="cane" style="font-weight:bold; margin:1vh;">Cane</label>
+  <input type="radio" id="walker" name="q20d" value="walker" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="walker" style="font-weight:bold;  margin:1vh;">Walker</label><br>
+  <input type="radio" id="crutch" name="q20d" value="crutch" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  <label for="crutch" style="font-weight:bold; margin:1vh;">Crutch</label>
+  <input type="radio" id="other" name="q20d" value="other" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="other" style="font-weight:bold; margin:1vh;">Other</label><br>
+  </div>
+  <label for="notes">Notes: </label>
+    <input type="text" id="notes" name="notes">
   </div>
   
 <div class="bottom">

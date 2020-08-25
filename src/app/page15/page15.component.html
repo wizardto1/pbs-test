@@ -11,18 +11,24 @@ Step Test</h1>
 <p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
-  <table>
-    <tr><th>Stands</th><td><div >Time Recorded:<div class="time">{{time}}s</div> </div></td></tr>
-    <tr>
-      <td>Less than 15s
-</td>
-      <td>
-  <input type="radio" id="1" name="q1" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+   <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+      
+
+  Steps Forward:<br>
+  <input type="radio" id="1" name="q15" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
-  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
-  <td>Unable</td><td>
-  <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
- <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+  <label for="1" style="font-weight:bold; margin:1vh;">≥ 10s               </label>
+  
+  <input type="radio" id="0" name="q15" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">< 10s/Unable</label><br>
+  Step Leg:<br>
+  <input type="radio" id="left" name="q15foot" value="left" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  
+  <label for="left" style="font-weight:bold; margin-right:2vh;">Left</label>
+  
+  <input type="radio" id="right" name="q15foot" value="right" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="right" style="font-weight:bold">Right</label></div>
+  <label for="steps">Notes: </label>
+    <input type="text" id="steps" name="steps">
+
   </div>
 <div class="bottom">
         <button [routerLink]="['/page14']"  > Back</button>

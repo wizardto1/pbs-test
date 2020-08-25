@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Page11Component implements OnInit {
 flag;
   time;
+  flag2;
   buttonDisabled:boolean=false;
   constructor() { }
 

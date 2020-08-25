@@ -17,33 +17,34 @@ Stand, begin walking at your usual speed. When you get to the boxes, step over t
 <p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
-  <table>
-    
-    <tr>
-      <td>Steps over boxes 
-with minimal change
-of gait speed.  
+    <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+      
 
-</td>
-      <td>
-  <input type="radio" id="1" name="q2" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  Completes 8 Steps in:<br>
+  <input type="radio" id="1" name="q11" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
-  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
-  <td>Touches boxes, 
-hesitates, slows 
-gait, OR 
-Unable
-</td><td>
-  <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
- <div class="radio-toolbar">
-  If assistive device was used, Specify:<br>
-  <input type="radio" id="cane" name="q2" value="cane" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="cane" style="font-weight:bold; margin-right:2vh;">Cane</label>
-  <input type="radio" id="walker" name="q2" value="walker" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="walker" style="font-weight:bold;margin-right:2vh;">Walker</label>
-  <input type="radio" id="crutch" name="q2" value="crutch" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="crutch" style="font-weight:bold; margin-right:2vh;">Crutch</label>
-  <input type="radio" id="other" name="q2" value="other" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="other" style="font-weight:bold">Other</label><br>
+  <label for="1" style="font-weight:bold; margin:1vh;">Steps over boxes with minimal change of gait speed.                                               </label>
+  
+  <input type="radio" id="0" name="q11" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold"> Touches boxes, hesitates, slows gait, OR 
+Unable                              
+</label><br>
  </div>
+ <label for="steps"># of Steps: </label>
+    <input type="text" id="steps" name="steps"><br>
+  
+
+  
+  <div class="radio-toolbar">
+  If an assistive device is used,specify:
+  <input type="radio" id="cane" name="q8d" value="cane" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  <label for="cane" style="font-weight:bold; margin:1vh;">Cane</label>
+  <input type="radio" id="walker" name="q8d" value="walker" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="walker" style="font-weight:bold;  margin:1vh;">Walker</label><br>
+  <input type="radio" id="crutch" name="q8d" value="crutch" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  <label for="crutch" style="font-weight:bold; margin:1vh;">Crutch</label>
+  <input type="radio" id="other" name="q8d" value="other" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="other" style="font-weight:bold; margin:1vh;">Other</label><br>
+  </div>
+  <label for="notes">Notes: </label>
+    <input type="text" id="notes" name="notes">
   </div>
   
 <div class="bottom">

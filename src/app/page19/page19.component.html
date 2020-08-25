@@ -15,24 +15,24 @@
 <p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
-  <table>
-    <tr>
-    <th>Steps Forward:</th></tr>
-    <tr>
-      <td>≥ 24 in (60 cm) AND returns in 1 step ≤ 3 s                                            </td>
-      <td>
-  <input type="radio" id="1" name="q1" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
-  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
-  <td>Unable</td><td>
-  <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
+       <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+
+  Steps Forward:<br>
+  <input type="radio" id="1" name="q19" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
-  <div class="radio-toolbar">
-    Step Leg: <input type="radio" id="1" name="q2" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="1" style="font-weight:bold; margin:1vh;">≥ 24 in (60 cm) AND returns within 1 step under 3s                                  </label>
   
-  <label for="1" style="font-weight:bold; margin-right:2vh;">Left </label>
-  <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Right</label>
-  </div>
+  <input type="radio" id="0" name="q18" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Unable</label><br>
+  Step Leg:<br>
+  <input type="radio" id="left" name="q18foot" value="left" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  
+  <label for="left" style="font-weight:bold; margin-right:2vh;">Left</label>
+  
+  <input type="radio" id="right" name="q18foot" value="right" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="right" style="font-weight:bold">Right</label></div>
+  <label for="steps">Notes: </label>
+    <input type="text" id="steps" name="steps">
+
   </div>
 <div class="bottom">
         <button [routerLink]="['/page18']"  > Back</button>

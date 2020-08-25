@@ -9,6 +9,7 @@ export class Page18Component implements OnInit {
 flag;
   time;
   buttonDisabled:boolean=false;
+  flag2;
   constructor() { }
 
   ngOnInit() {

@@ -10,18 +10,19 @@
 <p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
-  <table>
-    <tr><th>Stands</th><td><div >Time Recorded:<div class="time">{{time}}s</div> </div></td></tr>
-    <tr>
-      <td>More than 30s
-</td>
-      <td>
-  <input type="radio" id="1" name="q1" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+   
+      <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+
+  Steps Forward:<br>
+  <input type="radio" id="1" name="q16" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
-  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
-  <td>Less than 30s/Unable</td><td>
-  <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
- <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+  <label for="1" style="font-weight:bold; margin:1vh;">under 15s  </label>
+  
+  <input type="radio" id="0" name="q16" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Unable</label><br>
+ </div>
+  <label for="steps">Notes: </label>
+    <input type="text" id="steps" name="steps">
+
   </div>
 <div class="bottom">
         <button [routerLink]="['/page15']"  > Back</button>
