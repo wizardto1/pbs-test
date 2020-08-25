@@ -14,30 +14,34 @@ Sit with your back against the chair back. When I say “go,” stand up from th
 <p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
-  <table>
-    <tr>
-    <th>Completes in:</th><td><div >Time Recorded:<div class="time">{{time}}s</div> </div></td></tr>
-    <tr>
-      <td>under 12s
-</td>
-      <td>
+    <div >Time Recorded:<div class="time">{{time}}s</div> </div>
+      
+
+  Completes 8 Steps in:<br>
   <input type="radio" id="1" name="q8" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
-  <label for="1" style="font-weight:bold">1 </label><br></td></tr><tr>
-  <td>Over 12s/Unable</td><td>
-  <input type="radio" id="0" name="q8" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">0</label></td></tr></table></div>
- 
+  <label for="1" style="font-weight:bold; margin:1vh;">under 12s               </label>
+  
+  <input type="radio" id="0" name="q8" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold"> over 12s/Unable</label><br>
+ </div>
+ <label for="steps"># of Steps: </label>
+    <input type="text" id="steps" name="steps"><br>
+  
+
+  
   <div class="radio-toolbar">
   If an assistive device is used,specify:
-  <input type="radio" id="cane" name="q8d" value="cane" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="cane" style="font-weight:bold; margin-right:2vh;">Cane</label>
-  <input type="radio" id="walker" name="q8d" value="walker" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="walker" style="font-weight:bold">Walker</label>
-  <input type="radio" id="crutch" name="q8d" value="crutch" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="crutch" style="font-weight:bold; margin-right:2vh;">Crutch</label>
-  <input type="radio" id="other" name="q8d" value="other" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="other" style="font-weight:bold">Other</label><br>
+  <input type="radio" id="cane" name="q8d" value="cane" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  <label for="cane" style="font-weight:bold; margin:1vh;">Cane</label>
+  <input type="radio" id="walker" name="q8d" value="walker" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="walker" style="font-weight:bold;  margin:1vh;">Walker</label><br>
+  <input type="radio" id="crutch" name="q8d" value="crutch" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  <label for="crutch" style="font-weight:bold; margin:1vh;">Crutch</label>
+  <input type="radio" id="other" name="q8d" value="other" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="other" style="font-weight:bold; margin:1vh;">Other</label><br>
+  </div>
+  <label for="notes">Notes: </label>
+    <input type="text" id="notes" name="notes">
+  </div>
   
-  </div>
-  </div>
   
 <div class="bottom">
         <button [routerLink]="['/page7']"  > Back</button>
