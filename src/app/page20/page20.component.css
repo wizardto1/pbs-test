@@ -4,7 +4,7 @@ p{
 .header{
   text-align:center;
   font-family:Lato;
-font-size:2vh;
+
   border:solid;
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@ font-size:2vh;
   font-size:3vh;
   border:solid;
   padding:1vh;
-  margin-bottom:3vh;
+  margin-bottom:1.5vh;
   height:47vh;
   border-color:blue;
   overflow-x: hidden;
@@ -30,8 +30,8 @@ font-size:2vh;
   font-size:3vh;
   border:solid;
   padding:1vh;
-  margin-bottom:3vh;
-  height:27vh;
+  margin-bottom:2vh;
+  height:28.5vh;
   border-color:blue;
   overflow-x: hidden;
 }
@@ -52,6 +52,7 @@ button{
   border:solid;
   padding:1vh;
   margin-bottom:2vh;
+  height:8vh;
   border-color:blue;
   justify-content:space-between;
   display:flex;
