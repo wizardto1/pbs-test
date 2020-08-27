@@ -8,6 +8,7 @@ import { ScoresService } from '../scores.service';
 export class Page14Component implements OnInit {
 flag;
   time;
+  flag2;
   buttonDisabled:boolean=false;
   constructor(private scoresService: ScoresService) { }
 

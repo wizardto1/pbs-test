@@ -13,9 +13,12 @@ export class ResultsComponent implements OnInit {
   sg=0;
   to=0;
   total=0;
-  constructor() { }
-
+  constructor(private scoresService: ScoresService){ }
+  reset(){
+    this.scoresService.reset();
+  }
   ngOnInit() {
+    this.total=this.scoresService.gettotal();
   }
 
 }

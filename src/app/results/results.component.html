@@ -8,16 +8,16 @@
        <tr>
       <td>  Sensory
      orientation (SO):
-</td><td>{{so}}/4<td></tr>
+</td><td>{{so}}/3<td></tr>
        <tr>
       <td>Anticipatory
      postural
      adjustments (APA):
-</td><td>{{apa}}/4<td></tr>
+</td><td>{{apa}}/6<td></tr>
        <tr>
       <td>Perturbation 
      responses (PR):
-</td><td>{{pr}}/4<td></tr>
+</td><td>{{pr}}/3<td></tr>
        <tr>
       <td>Stability in 
      gait (SG):
@@ -31,6 +31,6 @@
 <div class="bottom">
         <button [routerLink]="['/page22']"  > Back</button>
          <button [routerLink]="['/email']"  > Email Results</button>
-      <button [routerLink]="['/home']" style="font-size:1.5vh;" > Restart (Results will be discarded)</button>
+      <button [routerLink]="['/home']" style="font-size:1.5vh;" (click)="reset()" > Restart (Results will be discarded)</button>
 
  </div>

@@ -42,6 +42,11 @@ export class ScoresService {
   button14:boolean;
   total:number=0;
   max;
+  qs:number;
+  so:number;
+  apa:number;
+  pr:number;
+  sg:number;
   setScore1(score){
     this.score1=score;
     console.log(this.score1)
@@ -285,9 +290,10 @@ setScore15(score){
     return this.score22
   }
   gettotal(){
+    console.log(this.scores)
     this.total=0;
-    this.max=56
-    for (let i = 0; i < 14; i++){
+    this.max=20;
+    for (let i = 0; i < 20; i++){
       if (this.scores[i]=='skip'){
         console.log(this.max)
         this.max-=4;
@@ -301,6 +307,27 @@ setScore15(score){
   }
   getmax(){
     return this.max;
+  }
+  getqs(){
+      this.qs=parseInt(this.scores[0])+parseInt(this.scores[6])+parseInt(this.scores[11])+parseInt(this.scores[18]);
+      return this.qs
+  }
+  getso(){
+      this.so=parseInt(this.scores[1])+parseInt(this.scores[13])+parseInt(this.scores[17]);
+      return this.so
+  }
+  getapa(){
+    this.apa=parseInt(this.scores[3])+parseInt(this.scores[4])+parseInt(this.scores[7])+parseInt(this.scores[9])+parseInt(this.scores[15])+parseInt(this.scores[16]);
+    return this.apa;
+
+  }
+  getpr(){  
+    this.pr=parseInt(this.scores[2])+parseInt(this.scores[10])+parseInt(this.scores[19]);
+    return this.pr;
+  }
+  getsg(){
+    this.sg=parseInt(this.scores[5])+parseInt(this.scores[8])+parseInt(this.scores[12])+parseInt(this.scores[14]);
+    return this.sg;
   }
   reset(){
   this.scores=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -341,7 +368,7 @@ setScore15(score){
   this.button13=false;
   this.button14=false;
   this.total=0;
-  this.max=56;
+  this.max=20;
   return
   }
 
