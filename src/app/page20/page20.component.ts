@@ -10,11 +10,18 @@ flag;
 flag2;
   time;
   buttonDisabled:boolean=false;
-  constructor() { }
+  constructor(private scoresService: ScoresService) { }
 
-  ngOnInit() {
+  setScore20(flag){
+    this.scoresService.setScore20(flag)
+    
   }
-radioEventHandler(event:any){
+  ngOnInit() {
+  
+this.flag=this.scoresService.getScore20()
+
+  }
+  radioEventHandler(event:any){
     
     this.buttonDisabled=true;
   }
