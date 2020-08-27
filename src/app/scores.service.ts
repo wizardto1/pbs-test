@@ -277,7 +277,7 @@ setScore15(score){
     return this.score21
   }setScore22(score){
     this.score22=score;
-    this.scores[1]=score;
+    this.scores[19]=score;
     console.log(this.scores)
   }
   getScore22(){

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ScoresService } from '../scores.service';
 @Component({
   selector: 'app-page12',
   templateUrl: './page12.component.html',

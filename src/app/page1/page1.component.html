@@ -29,8 +29,8 @@ Place 1 foot directly in front of the other foot, touching heel to toe. Look str
 
   </div>
 <div class="bottom">
-        <button [routerLink]="['/info']"  > Back</button>
-      <button [routerLink]="['/page2']"  > Next</button>
+        <button [routerLink]="['/info']" (click)="setScore1(flag)" > Back</button>
+      <button [routerLink]="['/page2']" (click)="setScore1(flag)" > Next</button>
 
  </div>
 

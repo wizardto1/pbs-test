@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-@Component({
+import { ScoresService } from '../scores.service';@Component({
   selector: 'app-page21',
   templateUrl: './page21.component.html',
   styleUrls: ['./page21.component.css']
