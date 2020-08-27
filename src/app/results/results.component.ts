@@ -19,6 +19,11 @@ export class ResultsComponent implements OnInit {
   }
   ngOnInit() {
     this.total=this.scoresService.gettotal();
+    this.qs=this.scoresService.getqs();
+    this.so=this.scoresService.getso();
+    this.apa=this.scoresService.getapa();
+    this.pr=this.scoresService.getpr();
+    this.sg=this.scoresSerce.getsg();
   }
 
 }

@@ -42,11 +42,11 @@ export class ScoresService {
   button14:boolean;
   total:number=0;
   max;
-  qs:number;
-  so:number;
-  apa:number;
-  pr:number;
-  sg:number;
+  qs:number=0;
+  so:number=0;
+  apa:number=0;
+  pr:number=0;
+  sg:number=0;
   setScore1(score){
     this.score1=score;
     console.log(this.score1)
@@ -369,6 +369,12 @@ setScore15(score){
   this.button14=false;
   this.total=0;
   this.max=20;
+  this.qs=0;
+  this.so=0;
+  this.apa=0;
+  this.pr=0;
+  this.sg=0;
+
   return
   }
 
