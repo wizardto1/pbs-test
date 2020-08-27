@@ -27,7 +27,7 @@ No assistive device, no assistance, demonstrate task. Allow 2 trials, if needed.
   </div>
   
 <div class="bottom">
-        <button [routerLink]="['/page2']"  > Back</button>
-      <button [routerLink]="['/page4']"  > Next</button>
+        <button [routerLink]="['/page2']" (click)="setScore3(flag)"   > Back</button>
+      <button [routerLink]="['/page4']"  (click)="setScore3(flag)"  > Next</button>
 
  </div>

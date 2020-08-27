@@ -3,7 +3,7 @@ import { AppModule } from './app.module';
 
 @Injectable()
 export class ScoresService {
-  scores:[any,any,any,any,any,any,any,any,any,any,any,any,any,any,any,any,any,any,any,any];
+  scores:[any,any,any,any,any,any,any,any,any,any,any,any,any,any,any,any,any,any,any,any]=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   score1:any;
   score2:any;
   score3:any;
@@ -72,6 +72,7 @@ export class ScoresService {
   setScore3(score){
     this.score3=score;
     this.scores[0]=score;
+    console.log(this.scores[0])
   }
   getScore3(){
     return this.score3

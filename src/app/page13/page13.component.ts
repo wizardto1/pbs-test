@@ -9,11 +9,18 @@ export class Page13Component implements OnInit {
 flag;
   time;
   buttonDisabled:boolean=false;
-  constructor() { }
+  constructor(private scoresService: ScoresService) { }
 
-  ngOnInit() {
+  setScore13(flag){
+    this.scoresService.setScore13(flag)
+    this.scoresService.setButton13(this.buttonDisabled)
   }
-radioEventHandler(event:any){
+  ngOnInit() {
+  
+this.flag=this.scoresService.getScore13()
+this.buttonDisabled=this.scoresService.getButton13()
+  }
+  radioEventHandler(event:any){
     
     this.buttonDisabled=true;
   }

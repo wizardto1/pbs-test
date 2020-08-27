@@ -9,11 +9,18 @@ export class Page10Component implements OnInit {
  flag;
   time;
   buttonDisabled:boolean=false;
-  constructor() { }
+    constructor(private scoresService: ScoresService) { }
 
-  ngOnInit() {
+  setScore10(flag){
+    this.scoresService.setScore10(flag)
+    this.scoresService.setButton10(this.buttonDisabled)
   }
-radioEventHandler(event:any){
+  ngOnInit() {
+  
+this.flag=this.scoresService.getScore10()
+this.buttonDisabled=this.scoresService.getButton10()
+  }
+  radioEventHandler(event:any){
     
     this.buttonDisabled=true;
   }
