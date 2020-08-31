@@ -23,7 +23,7 @@ export class ResultsComponent implements OnInit {
     this.so=this.scoresService.getso();
     this.apa=this.scoresService.getapa();
     this.pr=this.scoresService.getpr();
-    this.sg=this.scoresSerce.getsg();
+    this.sg=this.scoresService.getsg();
   }
 
 }
