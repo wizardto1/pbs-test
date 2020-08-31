@@ -18,7 +18,7 @@ export class Page1Component implements OnInit {
     this.scoresService.setButton1(this.buttonDisabled)
   }
   gotoPage(flag){
-    console.log()
+    
     if (flag==0){
     this.router.navigate(['/page3']); }
     else{

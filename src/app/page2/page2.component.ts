@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ScoresService } from '../scores.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-page2',
   templateUrl: './page2.component.html',
@@ -10,12 +11,21 @@ export class Page2Component implements OnInit {
   time;
   flag2;
   buttonDisabled:boolean=false;
-   constructor(private scoresService: ScoresService) { }
+   constructor(private scoresService: ScoresService, private router: Router) { }
 
   setScore2(flag){
     this.scoresService.setScore2(flag)
     this.scoresService.setButton2(this.buttonDisabled)
   }
+  gotoPage(flag){
+     if (flag==0){
+    this.router.navigate(['/page8']); }
+    else if (flag==1){
+      this.router.navigate(['/page12']);}
+      else{
+        this.router.navigate(['/page3']);}
+      }
+  
   ngOnInit() {
   
 this.flag=this.scoresService.getScore2();
