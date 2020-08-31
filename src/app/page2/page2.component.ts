@@ -19,23 +19,22 @@ export class Page2Component implements OnInit {
   }
   gotoPage(flag){
      if (flag==0){
-       this.scoresService.setScore3('1');
-        this.scoresService.setScore4('1');
-         this.scoresService.setScore5('1');
-          this.scoresService.setScore6('1');
-           this.scoresService.setScore7('1');
+       this.scoresService.setScore3(1);
+        this.scoresService.setScore4(1);
+         this.scoresService.setScore5(1);
+          this.scoresService.setScore6(1);
+           this.scoresService.setScore7(1);
     this.router.navigate(['/page8']); }
     else if (flag==1){
-      this.scoresService.setScore3('1');
-        this.scoresService.setScore4('1');
-         this.scoresService.setScore5('1');
-          this.scoresService.setScore6('1');
-           this.scoresService.setScore7('1');
-           this.scoresService.setScore8('1');
-        this.scoresService.setScore9('1');
-         this.scoresService.setScore10('1');
-          this.scoresService.setScore11('1');
-  
+      this.scoresService.setScore3(1);
+        this.scoresService.setScore4(1);
+         this.scoresService.setScore5(1);
+          this.scoresService.setScore6(1);
+           this.scoresService.setScore7(1);
+           this.scoresService.setScore8(1);
+        this.scoresService.setScore9(1);
+         this.scoresService.setScore10(1);
+          this.scoresService.setScore11(1);
       this.router.navigate(['/page12']);}
       else{
         this.router.navigate(['/page3']);}
