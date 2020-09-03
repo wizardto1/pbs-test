@@ -28,7 +28,7 @@
   </div>
   
 <div class="bottom">
-        <button [routerLink]="['/page5']" (click)="setScore6(flag)"  > Back</button>
-      <button [routerLink]="['/page7']" (click)="setScore6(flag)" > Next</button>
+        <button [routerLink]="['/page5']" (click)="setScore6(flag)" style="visibility:hidden" > Back</button>
+      <button [routerLink]="['/page7']" (click)="setScore6(flag)" [disabled]="!buttonDisabled" > Next</button>
 
  </div>

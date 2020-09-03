@@ -13,6 +13,9 @@ p{
   border-color:blue;
   height:10vh;
 }
+:disabled{
+  background-color:#dddddd
+}
 .info{
    text-align:left;
   font-family:Lato;
