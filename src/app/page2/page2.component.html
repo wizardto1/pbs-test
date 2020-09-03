@@ -31,7 +31,7 @@ Stand with feet hip width apart. Step on the tape with your toes against the fro
 
   </div>
 <div class="bottom">
-        <button [routerLink]="['/page1']"  (click)="setScore2(flag)"  > Back</button>
-      <button  (click)="setScore2(flag);gotoPage(flag)"  > Next</button>
+        <button [routerLink]="['/page1']"  (click)="setScore2(flag)" style="visibility:hidden" > Back</button>
+      <button  (click)="setScore2(flag);gotoPage(flag)" [disabled]="!buttonDisabled"  > Next</button>
 
  </div>
