@@ -80,6 +80,9 @@ export class ScoresService {
   leg6:any;
   leg7:any;
   test:number=1;
+  getTest(){
+    return this.test
+  }
   setScore1(score){
     this.score1=score;
     console.log(this.score1)
@@ -362,6 +365,13 @@ setScore15(score){
     this.sg=parseInt(this.scores[5])+parseInt(this.scores[8])+parseInt(this.scores[12])+parseInt(this.scores[14]);
     return this.sg;
   }
+  setDevice1(device){this.device1=device; console.log(this.device1)}
+  getDevice1(){return this.device1}
+  setDevice2(device){this.device2=device;}
+  getDevice2(){return this.device1}
+  setDevice3(device){this.device3=device; }
+  getDevice3(){return this.device3}
+
   reset(){
   this.scores=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
   this.score1=0;
@@ -407,6 +417,17 @@ setScore15(score){
   this.apa=0;
   this.pr=0;
   this.sg=0;
+  this.device1="-"
+  this.device2="-"
+  this.device3="-"
+  this.leg1="-"
+  this.leg2="-"
+  this.leg3="-"
+  this.leg4="-"
+  this.leg5="-"
+  this.leg6="-"
+  this.leg7="-"
+  this.test+=1
 
   return
   }
