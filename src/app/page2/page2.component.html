@@ -15,11 +15,11 @@ Stand with feet hip width apart. Step on the tape with your toes against the fro
       
 
   Steps Forward:<br>
-  <input type="radio" id="1" name="q2" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <input type="radio" id="1" name="q2" value="passed" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
   <label for="1" style="font-weight:bold; margin:1vh;">≥ 24 in (60 cm) AND returns in 1 step               </label>
   
-  <input type="radio" id="0" name="q2" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Unable</label><br>
+  <input type="radio" id="0" name="q2" value="no" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Unable</label><br>
   Step Leg:<br>
   <input type="radio" id="left" name="q2foot" value="left" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
   

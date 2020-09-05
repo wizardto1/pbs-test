@@ -36,6 +36,9 @@ button{
   margin-right:2vh;
  
 }
+table,th,td{
+  border:solid;
+}
 .bottom{
   
   font-family:Lato;

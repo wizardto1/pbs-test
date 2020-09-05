@@ -14,16 +14,16 @@ export class ResultsComponent implements OnInit {
   to=0;
   total=0;
   score1=0;
-  score2="skip;
+  score2="skip";
   score3=0;
-  score4=0;
-  score5=0;
-  score6=0;
-  score7=0;
-  score8=0;
-  score9=0;
-  score10=0;
-  score11=0;
+  score4="skip";
+  score5="skip";
+  score6="skip";
+  score7="skip";
+  score8="skip";
+  score9="skip";
+  score10="skip";
+  score11="skip";
   score12=0;
   score13=0;
   score14=0;
@@ -35,6 +35,30 @@ export class ResultsComponent implements OnInit {
   score20=0;
   score21=0;
   score22=0;
+  time1="-"
+  note1="-";
+  note2="-";
+  note3="-";
+  note4="-";
+  note5="-";
+  note6="-";
+  note7="-";
+note8="-";
+note9="-";
+  note10="-";
+  note11="-";
+  note12="-";
+  note13="-";
+  note14="-";
+  note15="-";
+  note16="-";
+  note17="-";
+  note18="-";
+  note19="-";
+  note20="-";
+  note21="-";
+  note22="-";
+  
   constructor(private scoresService: ScoresService){ }
   reset(){
     this.scoresService.reset();
