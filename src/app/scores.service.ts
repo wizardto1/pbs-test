@@ -371,20 +371,20 @@ setScore15(score){
   getDevice2(){return this.device1}
   setDevice3(device){this.device3=device; }
   getDevice3(){return this.device3}
-  getLeg1(leg){this.leg1=leg;}
-  setLeg1(leg){return this.leg1}
-  getLeg2(leg){this.leg2=leg;}
-  setLeg2(leg){return this.leg2}
-    getLeg3(leg){this.leg3=leg;}
-  setLeg3(leg){return this.leg3}
-    getLeg4(leg){this.leg4=leg;}
-  setLeg4(leg){return this.leg4}
-    getLeg5(leg){this.leg5=leg;}
-  setLeg5(leg){return this.leg5}
-    getLeg6(leg){this.leg6=leg;}
-  setLeg6(leg){return this.leg6}
-    getLeg7(leg){this.leg7=leg;}
-  setLeg7(leg){return this.leg7}
+  setLeg1(leg){this.leg1=leg;}
+  getLeg1(){return this.leg1}
+  setLeg2(leg){this.leg2=leg;}
+  getLeg2(){return this.leg2}
+    setLeg3(leg){this.leg3=leg;}
+getLeg3(){return this.leg3}
+    setLeg4(leg){this.leg4=leg;}
+  getLeg4(){return this.leg4}
+    setLeg5(leg){this.leg5=leg;}
+  getLeg5(){return this.leg5}
+    setLeg6(leg){this.leg6=leg;}
+  getLeg6(){return this.leg6}
+    setLeg7(leg){this.leg7=leg;}
+  getLeg7(leg){return this.leg7}
 
 
   reset(){

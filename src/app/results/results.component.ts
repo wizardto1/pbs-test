@@ -118,7 +118,14 @@ note9="-";
     this.device1=this.scoresService.getDevice1();
     this.device2=this.scoresService.getDevice2();
     this.device3=this.scoresService.getDevice3();
-    t
+    this.leg1=this.scoresService.getLeg1();
+    this.leg2=this.scoresService.getLeg2();
+    this.leg3=this.scoresService.getLeg3();
+    this.leg4=this.scoresService.getLeg4();
+    this.leg5=this.scoresService.getLeg5();
+    this.leg6=this.scoresService.getLeg6();
+    this.leg7=this.scoresService.getLeg7();
+
 
   }
 
