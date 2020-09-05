@@ -69,16 +69,16 @@ export class ScoresService {
   note20:any;
   note21:any;
   note22:any;
-  device1:any;
-  device2:any;
-  device3:any;
-  leg1:any;
-  leg2:any;
-  leg3:any;
-  leg4:any;
-  leg5:any;
-  leg6:any;
-  leg7:any;
+  device1:string="-";
+  device2:string="-";
+  device3:string="-";
+  leg1:string="-";
+  leg2:string="-";
+  leg3:string="-";
+  leg4:string="-";
+  leg5:string="-";
+  leg6:string="-";
+  leg7:string="-";
   test:number=1;
   getTest(){
     return this.test
@@ -371,6 +371,21 @@ setScore15(score){
   getDevice2(){return this.device1}
   setDevice3(device){this.device3=device; }
   getDevice3(){return this.device3}
+  getLeg1(leg){this.leg1=leg;}
+  setLeg1(leg){return this.leg1}
+  getLeg2(leg){this.leg2=leg;}
+  setLeg2(leg){return this.leg2}
+    getLeg3(leg){this.leg3=leg;}
+  setLeg3(leg){return this.leg3}
+    getLeg4(leg){this.leg4=leg;}
+  setLeg4(leg){return this.leg4}
+    getLeg5(leg){this.leg5=leg;}
+  setLeg5(leg){return this.leg5}
+    getLeg6(leg){this.leg6=leg;}
+  setLeg6(leg){return this.leg6}
+    getLeg7(leg){this.leg7=leg;}
+  setLeg7(leg){return this.leg7}
+
 
   reset(){
   this.scores=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];

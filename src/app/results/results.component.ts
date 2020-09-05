@@ -115,6 +115,10 @@ note9="-";
     this.score20=this.scoresService.getScore20();
     this.score21=this.scoresService.getScore21();
     this.score22=this.scoresService.getScore22();
+    this.device1=this.scoresService.getDevice1();
+    this.device2=this.scoresService.getDevice2();
+    this.device3=this.scoresService.getDevice3();
+    t
 
   }
 

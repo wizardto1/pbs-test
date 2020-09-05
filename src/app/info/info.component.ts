@@ -13,7 +13,7 @@ today= new Date();
   constructor(private scoresService: ScoresService) {this.jstoday = formatDate(this.today, 'MM-dd-yyyy ', 'en-US'); }
 
   ngOnInit() {
-    this.testnumber=this.scoresService.getTesst
+    this.testnumber=this.scoresService.getTest()
   }
 
 }
