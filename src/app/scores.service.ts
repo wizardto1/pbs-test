@@ -79,6 +79,7 @@ export class ScoresService {
   leg5:any;
   leg6:any;
   leg7:any;
+  test:number=1;
   setScore1(score){
     this.score1=score;
     console.log(this.score1)
