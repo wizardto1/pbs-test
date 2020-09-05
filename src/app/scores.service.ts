@@ -47,6 +47,38 @@ export class ScoresService {
   apa:number=0;
   pr:number=0;
   sg:number=0;
+  note1:any;
+  note2:any;
+  note3:any;
+  note4:any;
+  note5:any;
+  note6:any;
+  note7:any;
+  note8:any;
+  note9:any;
+  note10:any;
+  note11:any;
+  note12:any;
+  note13:any;
+  note14:any;
+  note15:any;
+  note16:any;
+  note17:any;
+  note18:any;
+  note19:any;
+  note20:any;
+  note21:any;
+  note22:any;
+  device1:any;
+  device2:any;
+  device3:any;
+  leg1:any;
+  leg2:any;
+  leg3:any;
+  leg4:any;
+  leg5:any;
+  leg6:any;
+  leg7:any;
   setScore1(score){
     this.score1=score;
     console.log(this.score1)
