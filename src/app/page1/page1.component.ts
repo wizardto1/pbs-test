@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ScoresService } from '../scores.service';
+import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-page1',
@@ -8,8 +9,9 @@ import { Router } from '@angular/router';
 })
 export class Page1Component implements OnInit {
   flag;
-  time;
+  
   flag2;
+  time;
   buttonDisabled:boolean=false;
   constructor(private scoresService: ScoresService, private router: Router ) { }
 
