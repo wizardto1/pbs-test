@@ -16,6 +16,7 @@ export class Page2Component implements OnInit {
   setScore2(flag){
     this.scoresService.setScore2(flag)
     this.scoresService.setButton2(this.buttonDisabled)
+    this.scoresService.setLeg2(this.flag2)
   }
   gotoPage(flag){
      if (flag==0){
@@ -43,7 +44,8 @@ export class Page2Component implements OnInit {
   ngOnInit() {
   
 this.flag=this.scoresService.getScore2();
-this.buttonDisabled=this.scoresService.getButton2()
+this.buttonDisabled=this.scoresService.getButton2();
+this.flag2=this.scoresService.getLeg2();
   }
   radioEventHandler(event:any){
     

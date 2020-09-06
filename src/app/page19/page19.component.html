@@ -25,11 +25,11 @@
   
   <input type="radio" id="0" name="q18" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Unable</label><br>
   Step Leg:<br>
-  <input type="radio" id="left" name="q18foot" value="left" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  <input type="radio" id="left" name="q18foot" value="left" [(ngModel)]="flag2" >
   
   <label for="left" style="font-weight:bold; margin-right:2vh;">Left</label>
   
-  <input type="radio" id="right" name="q18foot" value="right" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="right" style="font-weight:bold">Right</label></div>
+  <input type="radio" id="right" name="q18foot" value="right" [(ngModel)]="flag2" ><label for="right" style="font-weight:bold">Right</label></div>
   <label for="steps">Notes: </label>
     <input type="text" id="steps" name="steps">
 

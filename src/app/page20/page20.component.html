@@ -33,12 +33,14 @@ Unable
   
   <div class="radio-toolbar">
   If an assistive device is used,specify:
-  <input type="radio" id="cane" name="q20d" value="cane" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+   <input type="radio" id="none" name="q20d" value="none" [(ngModel)]="flag2" >
+  <label for="none" style="font-weight:bold; margin:1vh;">None Used</label>
+  <input type="radio" id="cane" name="q20d" value="cane" [(ngModel)]="flag2" >
   <label for="cane" style="font-weight:bold; margin:1vh;">Cane</label>
-  <input type="radio" id="walker" name="q20d" value="walker" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="walker" style="font-weight:bold;  margin:1vh;">Walker</label><br>
-  <input type="radio" id="crutch" name="q20d" value="crutch" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  <input type="radio" id="walker" name="q20d" value="walker" [(ngModel)]="flag2" ><label for="walker" style="font-weight:bold;  margin:1vh;">Walker</label><br>
+  <input type="radio" id="crutch" name="q20d" value="crutch" [(ngModel)]="flag2" >
   <label for="crutch" style="font-weight:bold; margin:1vh;">Crutch</label>
-  <input type="radio" id="other" name="q20d" value="other" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="other" style="font-weight:bold; margin:1vh;">Other</label><br>
+  <input type="radio" id="other" name="q20d" value="other" [(ngModel)]="flag2" ><label for="other" style="font-weight:bold; margin:1vh;">Other</label><br>
   </div>
   <label for="notes">Notes: </label>
     <input type="text" id="notes" name="notes">

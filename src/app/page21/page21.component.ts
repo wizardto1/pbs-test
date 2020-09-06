@@ -7,17 +7,19 @@ import { ScoresService } from '../scores.service';@Component({
 export class Page21Component implements OnInit {
 flag;
   time;
-  flag2;
+  flag2="-";
   buttonDisabled:boolean=false;
   constructor(private scoresService: ScoresService) { }
 
   setScore21(flag){
     this.scoresService.setScore21(flag)
+    this.scoresService.setLeg8(this.flag2)
     
   }
   ngOnInit() {
   
 this.flag=this.scoresService.getScore21()
+this.flag2=this.scoresService.getLeg8()
 
   }
   radioEventHandler(event:any){

@@ -56,6 +56,7 @@ export class ResultsComponent implements OnInit {
   leg5="-";
   leg6="-";
   leg7="-";
+  leg8="-"
   device1="-";
   device2="-";
   device3="-";
@@ -125,6 +126,7 @@ note9="-";
     this.leg5=this.scoresService.getLeg5();
     this.leg6=this.scoresService.getLeg6();
     this.leg7=this.scoresService.getLeg7();
+      this.leg8=this.scoresService.getLeg8();
 
 
   }

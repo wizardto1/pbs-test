@@ -15,11 +15,13 @@ flag;
   setScore11(flag){
     this.scoresService.setScore11(flag)
     this.scoresService.setButton11(this.buttonDisabled)
+    this.scoresService.setDevice2(this.flag2)
   }
   ngOnInit() {
   
 this.flag=this.scoresService.getScore11()
 this.buttonDisabled=this.scoresService.getButton11()
+this.flag2=this.scoresService.getDevice2()
   }
   radioEventHandler(event:any){
     

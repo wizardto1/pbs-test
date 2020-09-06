@@ -9,16 +9,18 @@ export class Page18Component implements OnInit {
 flag;
   time;
   buttonDisabled:boolean=false;
-  flag2;
+  flag2="-";
   constructor(private scoresService: ScoresService) { }
 
   setScore18(flag){
     this.scoresService.setScore18(flag)
+    this.scoresService.setLeg6(this.flag2)
     
   }
   ngOnInit() {
   
 this.flag=this.scoresService.getScore18()
+this.flag2=this.scoresService.getLeg6()
 
   }
   radioEventHandler(event:any){

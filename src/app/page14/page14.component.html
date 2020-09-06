@@ -21,11 +21,11 @@ Place 1 foot directly in front of the other foot, touching heel to toe. Look str
   
   <input type="radio" id="0" name="q14" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">< 10s/Unable</label><br>
   Step Leg:<br>
-  <input type="radio" id="left" name="q14foot" value="left" [(ngModel)]="flag2" (change)=radioEventHandler($event)>
+  <input type="radio" id="left" name="q14foot" value="left" [(ngModel)]="flag2" >
   
   <label for="left" style="font-weight:bold; margin-right:2vh;">Left</label>
   
-  <input type="radio" id="right" name="q14foot" value="right" [(ngModel)]="flag2" (change)=radioEventHandler($event)><label for="right" style="font-weight:bold">Right</label></div>
+  <input type="radio" id="right" name="q14foot" value="right" [(ngModel)]="flag2" ><label for="right" style="font-weight:bold">Right</label></div>
   <label for="steps">Notes: </label>
     <input type="text" id="steps" name="steps">
 

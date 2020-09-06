@@ -18,6 +18,7 @@ export class Page1Component implements OnInit {
   setScore1(flag){
     this.scoresService.setScore1(flag)
     this.scoresService.setButton1(this.buttonDisabled)
+    this.scoresService.setLeg1(this.flag2)
   }
   gotoPage(flag){
     
@@ -31,6 +32,7 @@ export class Page1Component implements OnInit {
   
 this.flag=this.scoresService.getScore1()
 this.buttonDisabled=this.scoresService.getButton1()
+this.flag2=this.scoresService.getLeg1()
   }
   radioEventHandler(event:any){
     
