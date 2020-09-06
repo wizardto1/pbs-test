@@ -15,6 +15,7 @@ flag;
   setScore4(flag){
     this.scoresService.setScore4(flag)
     this.scoresService.setButton4(this.buttonDisabled)
+     this.scoresService.set4Value(flag)
   }
   ngOnInit() {
   

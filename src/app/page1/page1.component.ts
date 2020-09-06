@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class Page1Component implements OnInit {
   flag;
   
-  flag2;
+  flag2="-";
   time;
   buttonDisabled:boolean=false;
   constructor(private scoresService: ScoresService, private router: Router ) { }
@@ -22,7 +22,8 @@ export class Page1Component implements OnInit {
   }
   gotoPage(flag){
     
-    if (flag==0){
+    if (flag=="no"){
+      this.scoresService.setScore2("skipped");
     this.router.navigate(['/page3']); }
     else{
       this.router.navigate(['/page2']);}

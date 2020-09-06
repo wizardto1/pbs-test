@@ -16,6 +16,7 @@ constructor(private scoresService: ScoresService) { }
     this.scoresService.setScore8(flag)
     this.scoresService.setButton8(this.buttonDisabled)
     this.scoresService.setDevice1(this.flag2)
+     this.scoresService.set8Value(flag)
   }
   ngOnInit() {
   

@@ -14,6 +14,7 @@ export class Page10Component implements OnInit {
   setScore10(flag){
     this.scoresService.setScore10(flag)
     this.scoresService.setButton10(this.buttonDisabled)
+     this.scoresService.set10Value(flag)
   }
   ngOnInit() {
   

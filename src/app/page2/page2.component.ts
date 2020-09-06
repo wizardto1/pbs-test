@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class Page2Component implements OnInit {
  flag;
   time;
-  flag2;
+  flag2="-";
   buttonDisabled:boolean=false;
    constructor(private scoresService: ScoresService, private router: Router) { }
 
@@ -19,14 +19,21 @@ export class Page2Component implements OnInit {
     this.scoresService.setLeg2(this.flag2)
   }
   gotoPage(flag){
-     if (flag==0){
+    if (flag=="no"){
+       debugger;
        this.scoresService.setScore3(1);
         this.scoresService.setScore4(1);
-         this.scoresService.setScore5(1);
-          this.scoresService.setScore6(1);
-           this.scoresService.setScore7(1);
-    this.router.navigate(['/page8']); }
-    else if (flag==1){
+    this.scoresService.setScore5(1);
+    this.scoresService.setScore6(1);
+    this.scoresService.setScore7(1);
+    this.scoresService.set3Value("skipped (1)");
+     this.scoresService.set4Value("skipped (1)");
+      this.scoresService.set5Value("skipped (1)");
+       this.scoresService.set6Value("skipped (1)");
+        this.scoresService.set7Value("skipped (1)");
+    this.router.navigate(['/page8']);
+    ; }
+    else if (flag=="passed"){
       this.scoresService.setScore3(1);
         this.scoresService.setScore4(1);
          this.scoresService.setScore5(1);
@@ -36,6 +43,16 @@ export class Page2Component implements OnInit {
         this.scoresService.setScore9(1);
          this.scoresService.setScore10(1);
           this.scoresService.setScore11(1);
+           this.scoresService.set3Value("skipped (1)");
+            this.scoresService.set4Value("skipped (1)");
+             this.scoresService.set5Value("skipped (1)");
+              this.scoresService.set6Value("skipped (1)");
+               this.scoresService.set7Value("skipped (1)");
+               this.scoresService.set8Value("skipped (1)");
+                this.scoresService.set9Value("skipped (1)");
+                 this.scoresService.set10Value("skipped (1)");
+                  this.scoresService.set11Value("skipped (1)");
+                  
       this.router.navigate(['/page12']);}
       else{
         this.router.navigate(['/page3']);}
