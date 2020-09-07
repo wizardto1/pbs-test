@@ -12,6 +12,7 @@ export class Page1Component implements OnInit {
   
   flag2="-";
   time;
+  note="-";
   buttonDisabled:boolean=false;
   constructor(private scoresService: ScoresService, private router: Router ) { }
 
@@ -19,7 +20,9 @@ export class Page1Component implements OnInit {
     this.scoresService.setScore1(flag)
     this.scoresService.setButton1(this.buttonDisabled)
     this.scoresService.setLeg1(this.flag2);
-    console.log(this.time);
+    this.scoresService.settime1(this.time);
+    this.scoresService.setnote1(this.note);
+   
   }
   gotoPage(flag){
     
@@ -32,6 +35,10 @@ export class Page1Component implements OnInit {
     OnInput (event:any){
       this.time = event.target.value;
       console.log(this.time)
+    }
+    OnInput2 (event:any){
+      this.note = event.target.value;
+      console.log(this.note)
     }
   
   ngOnInit() {

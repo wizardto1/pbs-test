@@ -127,6 +127,28 @@ note9="-";
     this.leg6=this.scoresService.getLeg6();
     this.leg7=this.scoresService.getLeg7();
       this.leg8=this.scoresService.getLeg8();
+      this.note1=this.scoresService.getnote1();
+      this.note2=this.scoresService.getnote2();
+      this.note3=this.scoresService.getnote3();
+      this.note4=this.scoresService.getnote4();
+      this.note5=this.scoresService.getnote5();
+      this.note6=this.scoresService.getnote6();
+      this.note7=this.scoresService.getnote7();
+      this.note8=this.scoresService.getnote8();
+      this.note9=this.scoresService.getnote9();
+      this.note10=this.scoresService.getnote10();
+      this.note11=this.scoresService.getnote11();
+      this.note12=this.scoresService.getnote12();
+      this.note13=this.scoresService.getnote13();
+      this.note14=this.scoresService.getnote14();
+      this.note15=this.scoresService.getnote15();
+      this.note16=this.scoresService.getnote16();
+      this.note17=this.scoresService.getnote17();
+      this.note18=this.scoresService.getnote18();
+      this.note19=this.scoresService.getnote19();
+      this.note22=this.scoresService.getnote20();
+      this.note21=this.scoresService.getnote21();
+      this.note22=this.scoresService.getnote22();
 
 
   }

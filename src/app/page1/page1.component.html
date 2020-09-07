@@ -25,7 +25,7 @@ Place 1 foot directly in front of the other foot, touching heel to toe. Look str
   
   <input type="radio" id="right" name="q1foot" value="right" [(ngModel)]="flag2" ><label for="right" style="font-weight:bold">Right</label></div>
   <label for="steps">Notes: </label>
-    <input type="text" id="steps" name="steps">
+    <input type="text" id="steps" name="steps" value="" (change)="OnInput2($event)">
 
   </div>
 <div class="bottom">

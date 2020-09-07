@@ -8,13 +8,20 @@ import { ScoresService } from '../scores.service';
 export class Page22Component implements OnInit {
 flag;
   time;
+  note="-";
   buttonDisabled:boolean=false;
  constructor(private scoresService: ScoresService) { }
 
   setScore22(flag){
     this.scoresService.setScore22(flag)
+    this.scoresService.setnote22(this.note)
     
   }
+  OnInput (event:any){
+      this.note = event.target.value;
+      console.log(this.note)
+    }
+  
   ngOnInit() {
   
 this.flag=this.scoresService.getScore22()

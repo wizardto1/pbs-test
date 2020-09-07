@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class Page2Component implements OnInit {
  flag;
   time;
+  note="-";
   flag2="-";
   buttonDisabled:boolean=false;
    constructor(private scoresService: ScoresService, private router: Router) { }
@@ -17,6 +18,7 @@ export class Page2Component implements OnInit {
     this.scoresService.setScore2(flag)
     this.scoresService.setButton2(this.buttonDisabled)
     this.scoresService.setLeg2(this.flag2)
+    this.scoresService.setnote2(this.note)
   }
   gotoPage(flag){
     if (flag=="no"){
@@ -57,6 +59,10 @@ export class Page2Component implements OnInit {
       else{
         this.router.navigate(['/page3']);}
       }
+  OnInput (event:any){
+      this.note = event.target.value;
+      console.log(this.note)
+    }
   
   ngOnInit() {
   
