@@ -30,7 +30,7 @@ Tester: Place 2 pieces of tape, 24 in (60 cm) apart on the floor as measured by 
   
   <input type="radio" id="right" name="q18foot" value="right" [(ngModel)]="flag2" ><label for="right" style="font-weight:bold">Right</label></div>
   <label for="steps">Notes: </label>
-    <input type="text" id="steps" name="steps">
+    <input type="text" id="steps" name="steps" value="" (change)="OnInput2($event)">
 
   </div>
 <div class="bottom">

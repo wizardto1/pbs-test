@@ -24,7 +24,7 @@ Response - Backward</h1>
   <input type="radio" id="0" name="q13" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Unable</label><br>
  </div>
   <label for="steps">Notes: </label>
-    <input type="text" id="steps" name="steps">
+    <input type="text" id="steps" name="steps" value="" (change)="OnInput2($event)">
 
   </div>
 <div class="bottom">

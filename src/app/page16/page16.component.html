@@ -11,7 +11,7 @@
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
    
-       <div >Time Recorded (s):<div><input type="text" id="time" > </div> </div>
+       <div >Time Recorded (s):<div><input type="text" id="time" value="" (change)="OnInput($event)" > </div> </div>
 
   Steps Forward:<br>
   <input type="radio" id="1" name="q16" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
@@ -21,7 +21,7 @@
   <input type="radio" id="0" name="q16" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Unable</label><br>
  </div>
   <label for="steps">Notes: </label>
-    <input type="text" id="steps" name="steps">
+    <input type="text" id="steps" name="steps" value="" (change)="OnInput2($event)">
 
   </div>
 <div class="bottom">

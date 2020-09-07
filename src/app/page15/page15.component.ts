@@ -7,15 +7,26 @@ import { ScoresService } from '../scores.service';
 })
 export class Page15Component implements OnInit {
 flag;
-  time;
+note="-";
+  time="-";
   flag2;
   buttonDisabled:boolean=false;
    constructor(private scoresService: ScoresService) { }
 
   setScore15(flag){
     this.scoresService.setScore15(flag)
+    this.scoresService.setnote15(this.note)
+    this.scoresService.settime11(this.time)
     
   }
+  OnInput (event:any){
+      this.time = event.target.value;
+      
+    }
+  OnInput2 (event:any){
+      this.note = event.target.value;
+      
+    }
   ngOnInit() {
   
 this.flag=this.scoresService.getScore15()

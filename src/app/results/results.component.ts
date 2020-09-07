@@ -49,6 +49,7 @@ export class ResultsComponent implements OnInit {
   time12="-";
   time13="-";
   time14="-";
+  time15="-"
   leg1="-";
   leg2="-";
   leg3="-";
@@ -146,10 +147,24 @@ note9="-";
       this.note17=this.scoresService.getnote17();
       this.note18=this.scoresService.getnote18();
       this.note19=this.scoresService.getnote19();
-      this.note22=this.scoresService.getnote20();
+      this.note20=this.scoresService.getnote20();
       this.note21=this.scoresService.getnote21();
       this.note22=this.scoresService.getnote22();
-
+      this.time1=this.scoresService.gettime1();
+      this.time2=this.scoresService.gettime2();
+      this.time3=this.scoresService.gettime3();
+      this.time4=this.scoresService.gettime4();
+      this.time5=this.scoresService.gettime5();
+      this.time6=this.scoresService.gettime6();
+      this.time7=this.scoresService.gettime7();
+      this.time8=this.scoresService.gettime8();
+      this.time9=this.scoresService.gettime9();
+      this.time10=this.scoresService.gettime10();
+      this.time11=this.scoresService.gettime11();
+      this.time12=this.scoresService.gettime12();
+      this.time13=this.scoresService.gettime13();
+      this.time14=this.scoresService.gettime14();
+      this.time15=this.scoresService.gettime15();
 
   }
 

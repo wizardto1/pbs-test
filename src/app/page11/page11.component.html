@@ -17,7 +17,7 @@ Stand, begin walking at your usual speed. When you get to the boxes, step over t
 <p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
-     <div >Time Recorded (s):<div><input type="text" id="time" > </div> </div>
+     
       
 
   
@@ -44,7 +44,7 @@ Unable
   <input type="radio" id="other" name="q8d" value="other" [(ngModel)]="flag2" ><label for="other" style="font-weight:bold; margin:1vh;">Other</label><br>
   </div>
   <label for="notes">Notes: </label>
-    <input type="text" id="notes" name="notes">
+    <input type="text" id="notes" name="notes" value="" (change)="OnInput2($event)">
   </div>
   
 <div class="bottom">

@@ -90,6 +90,7 @@ export class ScoresService {
   time12:any;
   time13:any;
   time14:any;
+  time15:any;
   device1:string="-";
   device2:string="-";
   device3:string="-";
@@ -482,6 +483,7 @@ setnote19(note){this.note19=note}
   settime12(time){this.time12=time}gettime12(){return this.time12}
   settime13(time){this.time13=time}gettime13(){return this.time13}
   settime14(time){this.time14=time}gettime14(){return this.time14}
+  settime15(time){this.time15=time}gettime15(){return this.time15}
 
 
   reset(){
@@ -585,6 +587,7 @@ setnote19(note){this.note19=note}
       this.time12="-"
        this.time13="-"
         this.time14="-"
+        this.time15="-"
   this.test+=1
 
   return

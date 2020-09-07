@@ -17,7 +17,7 @@ note="-";
     this.scoresService.setButton3(this.buttonDisabled)
      this.scoresService.set3Value(flag)
      this.scoresService.setnote3(this.note)
-     this.scoresService.settime3(this.time)
+     this.scoresService.settime2(this.time)
   }
   OnInput (event:any){
       this.time = event.target.value;

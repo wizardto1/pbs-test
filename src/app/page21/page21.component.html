@@ -17,7 +17,8 @@
 <p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
-  
+   <div >Time Recorded (s):<div><input type="text" id="time" value="" (change)="OnInput($event)" > </div> </div>
+      
       
 
   Stands:<br>
@@ -33,7 +34,7 @@
   
   <input type="radio" id="right" name="q21foot" value="right" [(ngModel)]="flag2" ><label for="right" style="font-weight:bold">Right</label></div>
   <label for="notes">Notes: </label>
-    <input type="text" id="notes" name="notes">
+    <input type="text" id="notes" name="notes" value="" (change)="OnInput2($event)">
 
   </div>
 <div class="bottom">

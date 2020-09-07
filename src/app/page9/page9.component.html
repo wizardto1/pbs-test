@@ -12,7 +12,7 @@ Eyes Open    </h1>
 <p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
-    <div >Time Recorded (s):<div><input type="text" id="time" > </div> </div>
+    <div >Time Recorded (s):<div><input type="text" id="time" value="" (change)="OnInput($event)" > </div> </div>
 
   Stands:<br>
   <input type="radio" id="1" name="q9" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
@@ -22,7 +22,7 @@ Eyes Open    </h1>
   <input type="radio" id="0" name="q9" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">< 30s/Unable</label><br>
  </div>
   <label for="steps">Notes: </label>
-    <input type="text" id="steps" name="steps">
+    <input type="text" id="steps" name="steps" value="" (change)="OnInput2($event)">
 
   </div>
 <div class="bottom">

@@ -21,7 +21,7 @@ stepping                                     </label>
   
   <input type="radio" id="0" name="q5" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Unable</label></div>
   <label for="notes">Notes: </label>
-    <input type="text" id="notes" name="notes">
+    <input type="text" id="notes" name="notes" value="" (change)="OnInput2($event)">
 
   </div>
   
