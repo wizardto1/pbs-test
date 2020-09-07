@@ -79,6 +79,17 @@ export class ScoresService {
   note20:any;
   note21:any;
   note22:any;
+  time1:any;
+  time2:any;time3:any;time4:any;
+  time5:any;time6:any;
+  time7:any;
+  time8:any;
+  time9:any;
+  time10:any;
+  time11:any;
+  time12:any;
+  time13:any;
+  time14:any;
   device1:string="-";
   device2:string="-";
   device3:string="-";
@@ -416,6 +427,48 @@ getLeg3(){return this.leg3}
   get10Value(){return this.score10value}
    set11Value(score){this.score11value=score}
   get11Value(){return this.score11value}
+  setnote1(note){this.note1=note}
+  getnote1(){return this.note1}
+  setnote2(note){this.note2=note}
+  getnote2(){return this.note2}
+  setnote3(note){this.note3=note}
+  getnote3(){return this.note3}
+  setnote4(note){this.note4=note}
+  getnote4(){return this.note4}
+  setnote5(note){this.note5=note}
+  getnote5(){return this.note5}
+  setnote6(note){this.note6=note}
+  getnote6(){return this.note6}
+  setnote7(note){this.note7=note}
+  getnote7(){return this.note7}
+  setnote8(note){this.note8=note}
+  getnote8(){return this.note8}
+  setnote9(note){this.note9=note}
+  getnote9(){return this.note9}
+  setnote10(note){this.note10=note}
+  getnote10(){return this.note10}
+  setnote11(note){this.note11=note}
+  getnote11(){return this.note11}
+  setnote12(note){this.note12=note}
+  getnote12(){return this.note12}
+  setnote13(note){this.note13=note}
+  getnote13(){return this.note13}
+  setnote14(note){this.note14=note}
+  getnote14(){return this.note14}
+  setnote15(note){this.note15=note}
+  getnote15(){return this.note15}
+  setnote16(note){this.note16=note}
+  getnote16(){return this.note16}
+  setnote17(note){this.note17=note}
+  getnote17(){return this.note17}
+  setnote18(note){this.note18=note}
+  getnote18(){return this.note18}
+setnote19(note){this.note19=note}
+  getnote19(){return this.note19}setnote20(note){this.note20=note}
+  getnote20(){return this.note20}setnote21(note){this.note21=note}
+  getnote21(){return this.note21}setnote22(note){this.note22=note}
+  getnote22(){return this.note22}
+  settime1(time){this.time1=time}gettime1(){return this.t}
 
 
   reset(){
@@ -483,6 +536,42 @@ getLeg3(){return this.leg3}
   this.leg6="-"
   this.leg7="-"
   this.leg8="-"
+  this.note1="-"
+  this.note2="-"
+  this.note3="-"
+  this.note4="-"
+  this.note5="-"
+  this.note6="-"
+  this.note7="-"
+  this.note8="-"
+  this.note9="-"
+  this.note10="-"
+  this.note11="-"
+  this.note12="-"
+  this.note13="-"
+  this.note14="-"
+  this.note15="-"
+  this.note16="-"
+  this.note17="-"
+  this.note18="-"
+  this.note19="-"
+  this.note20="-"
+  this.note21="-"
+  this.note22="-"
+  this.time1="-"
+  this.time2="-"
+  this.time3="-"
+  this.time4="-"
+  this.time5="-"
+  this.time6="-"
+  this.time7="-"
+   this.time8="-"
+   this.time9="-"
+    this.time10="-"
+     this.time11="-"
+      this.time12="-"
+       this.time13="-"
+        this.time14="-"
   this.test+=1
 
   return

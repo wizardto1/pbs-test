@@ -18,7 +18,8 @@ export class Page1Component implements OnInit {
   setScore1(flag){
     this.scoresService.setScore1(flag)
     this.scoresService.setButton1(this.buttonDisabled)
-    this.scoresService.setLeg1(this.flag2)
+    this.scoresService.setLeg1(this.flag2);
+    console.log(this.time);
   }
   gotoPage(flag){
     
@@ -27,6 +28,10 @@ export class Page1Component implements OnInit {
     this.router.navigate(['/page3']); }
     else{
       this.router.navigate(['/page2']);}
+    }
+    OnInput (event:any){
+      this.time = event.target.value;
+      console.log(this.time)
     }
   
   ngOnInit() {
