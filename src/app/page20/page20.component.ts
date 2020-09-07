@@ -21,7 +21,7 @@ flag2="-";
     
   }
   OnInput (event:any){
-      this.note = event.target.value;
+      this.time = event.target.value;
       
     }
   OnInput2 (event:any){
