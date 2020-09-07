@@ -468,7 +468,20 @@ setnote19(note){this.note19=note}
   getnote20(){return this.note20}setnote21(note){this.note21=note}
   getnote21(){return this.note21}setnote22(note){this.note22=note}
   getnote22(){return this.note22}
-  settime1(time){this.time1=time}gettime1(){return this.t}
+  settime1(time){this.time1=time}gettime1(){return this.time1}
+  settime2(time){this.time2=time}gettime2(){return this.time2}
+  settime3(time){this.time3=time}gettime3(){return this.time3}
+  settime4(time){this.time4=time}gettime4(){return this.time4}
+  settime5(time){this.time5=time}gettime5(){return this.time5}
+  settime6(time){this.time6=time}gettime6(){return this.time6}
+  settime7(time){this.time7=time}gettime7(){return this.time7}
+  settime8(time){this.time8=time}gettime8(){return this.time8}
+  settime9(time){this.time9=time}gettime9(){return this.time9}
+  settime10(time){this.time10=time}gettime10(){return this.time10}
+  settime11(time){this.time11=time}gettime11(){return this.time11}
+  settime12(time){this.time12=time}gettime12(){return this.time12}
+  settime13(time){this.time13=time}gettime13(){return this.time13}
+  settime14(time){this.time14=time}gettime14(){return this.time14}
 
 
   reset(){
