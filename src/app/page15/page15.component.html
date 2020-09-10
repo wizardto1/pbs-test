@@ -15,10 +15,10 @@ Step Test</h1>
     <div >Time Recorded (s):<div><input type="text" id="time" value="" (change)="OnInput($event)"> </div> </div>
       
 
-  Steps Forward:<br>
+  Completes Test In :<br>
   <input type="radio" id="1" name="q15" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
-  <label for="1" style="font-weight:bold; margin:1vh;">over 15s               </label>
+  <label for="1" style="font-weight:bold; margin:1vh;">under 15s               </label>
   
   <input type="radio" id="0" name="q15" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Unable</label><br>
  </div>

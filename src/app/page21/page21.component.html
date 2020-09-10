@@ -3,18 +3,10 @@
 </div>
 <div class="info">
 <p>
-<strong>Tester:</strong> Stand behind client with one hand on each scapula, ask client to lean backward (make sure there is room to step backward). Require client to lean until the shoulders and hips are behind the heels, and you are supporting the client’s weight. Release your support when the client is in place. 
-
-
-
+<strong>Tester:</strong>No assistive device, no assistance, demonstrate task. Allow 2 trials, if needed. Score best trial. 
 </p><p>
+<strong>Client:</strong> Stand, hands on your hips, look straight ahead. Lift one leg off the floor without touching other leg. Stand as still as you can until I say stop (client chooses the stance leg).
 
-<strong>Client:</strong>
- Stand with your feet shoulder width apart, arms by your sides. Keeping your back straight, lean backward against my hands, allowing me to hold your weight. When I let go, step to avoid falling. 
-
-
-
-<p>
 </div>
 <div class="options"><app-timer></app-timer> <div class="radio-toolbar">
    <div >Time Recorded (s):<div><input type="text" id="time" value="" (change)="OnInput($event)" > </div> </div>
@@ -27,7 +19,7 @@
   <label for="1" style="font-weight:bold; margin:1vh;">Under 20s             </label>
   
   <input type="radio" id="0" name="q21" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Over 20s/Unable</label><br>
-  Step Leg:<br>
+  Stance Leg:<br>
   <input type="radio" id="left" name="q21foot" value="left" [(ngModel)]="flag2" >
   
   <label for="left" style="font-weight:bold; margin-right:2vh;">Left</label>
