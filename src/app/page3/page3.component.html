@@ -18,9 +18,9 @@ No assistive device, no assistance, demonstrate task. Allow 2 trials, if needed.
   Stands:<br>
   <input type="radio" id="1" name="q3" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   
-  <label for="1" style="font-weight:bold; margin-right:2vh;">over 30s </label>
+  <label for="1" style="font-weight:bold; margin-right:2vh;">≥ 30s </label>
   
-  <input type="radio" id="0" name="q3" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold">Under 30s/Unable</label></div>
+  <input type="radio" id="0" name="q3" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)><label for="0" style="font-weight:bold"> < 30s/Unable</label></div>
   <label for="notes">Notes: </label>
     <input type="text" id="notes" name="notes" value="" (change)="OnInput2($event)">
 
