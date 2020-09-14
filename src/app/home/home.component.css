@@ -9,7 +9,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center; 
-  margin-bottom:2vh;
+ 
   border-color:blue;
   height:10vh;
 }
@@ -19,8 +19,9 @@ p{
   font-size:3vh;
   border:solid;
   padding:1vh;
-  margin-bottom:3vh;
-  height:77vh;
+   margin-top:2vh;
+  margin-bottom:2vh;
+  height:70vh;
   border-color:blue;
 }
 button{
@@ -31,5 +32,5 @@ button{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 2vh;
 }
