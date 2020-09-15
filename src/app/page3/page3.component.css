@@ -20,12 +20,9 @@ p{
   border:solid;
   padding:1vh;
   margin-bottom:1.5vh;
-  height:47vh;
+  height:37vh;
   border-color:blue;
   overflow-x: hidden;
-}
-:disabled{
-  background-color:#dddddd;
 }
 .options{
    text-align:center;
@@ -48,13 +45,15 @@ button{
   display: inline-block;
   font-size: 16px;
 }
+:disabled{
+  background-color:#dddddd;
+}
 .bottom{
   
   font-family:Lato;
-  font-size:5vh;
+  
   border:solid;
   padding:1vh;
-  margin-bottom:2vh;
   height:8vh;
   border-color:blue;
   justify-content:space-between;
